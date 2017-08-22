@@ -1,0 +1,66 @@
+Product ID<br>
+<input type="text" ng-model = "ID"><br>
+Product Name<br>
+<input type="text" ng-model = "name"><br>
+Stock<br>
+<input type="text" ng-model = "Quantity" id = "Text1"><br>
+Price<br>
+<input type="text" ng-model = "Price" id = "Text2"> 	<br>
+Total<br>
+<input type="text" ng-model = "total" id = "txtresult"> 	<br>
+<br>
+<br>
+<input type="button" value = "register" name="" ng-click = "register()">
+<input type="button" value = "OK" name="" ng-click = "save()">
+<a href = "#/pos">sadasda</a>
+
+
+
+<div style="height:180px; overflow-y: scroll; width:800px;  position:absolute; right: 15px; top:50px;">
+
+	
+	 <table id="datatables-example" class="table1" width="80%" cellspacing="0" style="margin-left: 100px; margin-right: 100px">
+	                        <thead>
+	                            <tr>
+	                                <th style= "text-align: center;" col width="80"> Product ID</th>
+	                                <th style= "text-align: center;" col width="80"> Product Name</th>
+	                                <th style= "text-align: center;" col width="80">Stock</th>
+	                                <th style= "text-align: center;" col width="80">Price</th>
+	                                <th style= "text-align: center;" col width="80">Expiration</th>
+	                              </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr ng-repeat="(k, v) in chenes" style="cursor:pointer;"">
+	                                <td style= "text-align: center;" col width="80">{{v.id}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.name}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.quantity}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.price}}</td>
+	                                <td style= "text-align: center; color: red;" col width="80">{{v.total}}</td>
+	                            </tr>
+	                        </tbody>
+	</table>
+	</div>
+<div style="height:180px; overflow-y: scroll; width:800px;  position:absolute; right: 15px; top:250px;">
+
+	 <table id="datatables-example" class="table1" width="80%" cellspacing="0" style="margin-left: 100px; margin-right: 100px">
+	                        <thead>
+	                            <tr>
+	                                <th style= "text-align: center;" col width="80"> Product ID</th>
+	                                <th style= "text-align: center;" col width="80"> Product Name</th>
+	                                <th style= "text-align: center;" col width="80">Stock</th>
+	                                <th style= "text-align: center;" col width="80">Price</th>
+	                                <th style= "text-align: center;" col width="80">Expiration</th>
+	                              </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr ng-repeat="(k, v) in chixss" style="cursor:pointer;"">
+	                                <td style= "text-align: center;" col width="80">{{v.id}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.product_name}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.quantity}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.price}}</td>
+	                                <td style= "text-align: center;" col width="80">{{v.expiration}}</td>
+	                            </tr>
+	                        </tbody>
+	</table>
+
+</div>
